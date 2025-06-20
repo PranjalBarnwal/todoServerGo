@@ -4,8 +4,9 @@ This RESTful API allows you to manage a simple to-do list with full CRUD operati
 
 ---
 
-## 🔗 Frontend Live URL - 'https://keploygotodo.netlify.app/'
-
+## 🔗 Frontend Live URL 
+- Live : 'https://keploygotodo.netlify.app/'
+- Github Frontend : 'https://github.com/PranjalBarnwal/todoClientGo'
 ---
 
 ## 🔗 Base URL
