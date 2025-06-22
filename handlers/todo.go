@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"go-todo-app/db"
 	"go-todo-app/models"
+	"log"
 	"net/http"
 
 	"github.com/gorilla/mux"
@@ -31,6 +32,7 @@ func CreateTodo(w http.ResponseWriter, r *http.Request) {
 	).Scan(&todo.ID)
 
 	if err != nil {
+		log.Printf("Failed to insert todo: %v", err) // 👈 Add this
 		http.Error(w, err.Error(), 500)
 		return
 	}
