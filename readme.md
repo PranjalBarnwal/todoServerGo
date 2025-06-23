@@ -167,6 +167,9 @@ go test "-coverpkg=go-todo-app/handlers,go-todo-app/db,go-todo-app/models" ./tes
 
 > ✅ **Test coverage achieved**: ~75%+
 
+![image](https://github.com/user-attachments/assets/31f0e6f5-d914-4e92-a098-3bdd6f73672c)
+
+
 ---
 
 ## 👤 Author
