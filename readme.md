@@ -169,7 +169,22 @@ go test "-coverpkg=go-todo-app/handlers,go-todo-app/db,go-todo-app/models" ./tes
 
 ![image](https://github.com/user-attachments/assets/31f0e6f5-d914-4e92-a098-3bdd6f73672c)
 
+## 🚦 Keploy API Test Report
 
+Keploy is integrated into the CI/CD pipeline to automatically test API endpoints using real user traffic and record/replay capabilities.
+
+- **Keploy runs on every push and pull request via GitHub Actions.**
+- **API test cases are auto-generated and replayed for regression detection.**
+- **Test results are available in the Keploy Cloud dashboard.**
+
+### 📊 View Keploy Test Results
+![report testcases keploy](https://github.com/user-attachments/assets/7b571830-c2a3-43a5-a3fd-9e650c5cd662)
+
+---
+## CI/CD Configuration
+
+GitHub Actions to run the Keploy test suite.
+[View CI Workflow](.github/workflows/main.yml)
 ---
 
 ## 👤 Author
