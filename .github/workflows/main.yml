@@ -38,7 +38,7 @@ jobs:
         run: go mod download
 
       - name: Install Keploy CLI
-        run: go install github.com/keploy/keploy@latest
+        run: curl --silent -L https://keploy.io/ent/install.sh | bash
 
       - name: Set environment variables
         run: |
@@ -48,3 +48,9 @@ jobs:
 
       - name: Run Go App in background
         run: nohup go run main.go & sleep 5
+
+      - name: Run Keploy Test Suite
+        env:
+          KEPLOY_API_KEY: ${{ secrets.KEPLOY_API_KEY }}
+        run: |
+          keploy test-suite --app=<YOUR_KEPLOY_APP_ID> --base-path http://localhost:8080 --cloud
