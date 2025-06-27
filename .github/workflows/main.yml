@@ -35,7 +35,10 @@ jobs:
           go-version: 1.21
 
       - name: Install Keploy CLI
-        run: go install github.com/keploy/keploy@latest
+        run: |
+          curl -sL https://github.com/keploy/keploy/releases/latest/download/keploy-linux-amd64 -o keploy
+          chmod +x keploy
+          sudo mv keploy /usr/local/bin/
 
       - name: Set environment variables
         run: |
