@@ -53,4 +53,4 @@ jobs:
         env:
           KEPLOY_API_KEY: ${{ secrets.KEPLOY_API_KEY }}
         run: |
-          keploy test-suite --app=<YOUR_KEPLOY_APP_ID> --base-path http://localhost:8080 --cloud
+          keploy test-suite --app=59f21eae-5604-4221-bbe8-2184afd21752 --base-path http://localhost:8080 --cloud
